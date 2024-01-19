@@ -1,14 +1,16 @@
-import {RolePicking, SignIn,ScreenCaseCitizen,ProfileCard, ConnectWalletModal,JudgeCaseDetailPage} from '../Components/componentIndex'
+import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, Navbar,JudgeCaseDetailPage} from '../Components/componentIndex'
 
 export default function Home() {
   return (
     <div>
       {/* <RolePicking/> */}
       {/* <SignIn/> */}
+      {/* <SignUp/> */}
       {/* <ScreenCaseCitizen/> */}
       {/* <ProfileCard/> */}
-      {/* <ConnectWalletModal/>  */}
-      <JudgeCaseDetailPage/>  
+      {/* <ConnectWalletModal/>    */}
+      <Navbar/>
+      {/* <JudgeCaseDetailPage/> */}
     </div>
   );
 }
