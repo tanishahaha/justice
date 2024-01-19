@@ -1,4 +1,4 @@
-import {RolePicking, SignIn,ScreenCaseCitizen,ProfileCard, ConnectWalletModal} from '../Components/componentIndex'
+import {RolePicking, SignIn,ScreenCaseCitizen,ProfileCard, ConnectWalletModal,JudgeCaseDetailPage} from '../Components/componentIndex'
 
 export default function Home() {
   return (
@@ -7,7 +7,8 @@ export default function Home() {
       {/* <SignIn/> */}
       {/* <ScreenCaseCitizen/> */}
       {/* <ProfileCard/> */}
-      <ConnectWalletModal/>   
+      {/* <ConnectWalletModal/>  */}
+      <JudgeCaseDetailPage/>  
     </div>
   );
 }
