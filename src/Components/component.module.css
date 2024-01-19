@@ -2,3 +2,121 @@
   border-radius: 2.1875rem;
   background: linear-gradient(180deg, #2F6973 0%, #55A2A8 45.83%, #91C7C7 100%);
 }
+
+/* styles.module.css */
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loginContainer {
+  width: 100%;
+}
+
+.loginBox {
+  width: 100%;
+  background: linear-gradient(180deg, #079FA4 0%, #25666D 45.83%, #00495E 100%);
+}
+.walletBbtn{
+  background: linear-gradient(180deg, #079FA4 0%, #25666D 45.83%, #00495E 100%);
+}
+.iconContainer {
+  position: relative;
+  top: -4rem;
+}
+
+.iconBackground {
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background: linear-gradient(180deg, #2F6973 0%, #55A2A8 45.83%, #91C7C7 100%);
+  border-radius: 50%;
+  padding: 1rem;
+}
+.boxBg{
+  background: linear-gradient(180deg, #2F6973 0%, #55A2A8 45.83%, #91C7C7 100%);
+}
+/* component.module.css */
+.custom_calendar {
+  background: linear-gradient(180deg, #2F6973 0%, #55A2A8 45.83%, #91C7C7 100%) !important;
+  border: none !important;
+  outline: none !important;
+  /* border: none; */
+  /* Add any other styles as needed */
+}
+/* component.module.css */
+.react-calendar {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Override background color when hovering over dates */
+.react-calendar .react-calendar__tile--hover {
+  background-color: #ddd !important; /* Set your desired background color */
+}
+
+/* Customize date tile styles */
+.react-calendar .react-calendar__tile {
+  border-radius: 50% !important; /* Make the date tiles circular */
+  margin: 2px !important; /* Add margin to separate the tiles */
+}
+
+/* Customize date number styles */
+.react-calendar .react-calendar__tile--now {
+  background-color: #fff !important; /* Set background color for the current date */
+  color: #000 !important; /* Set text color for the current date */
+}
+
+
+/* .lockIcon {
+  // Add any specific styles for the lock icon
+}
+
+.welcomeText {
+  // Add any specific styles for the welcome text
+}
+
+.signInText {
+  // Add any specific styles for the sign-in text
+}
+
+.inputContainer {
+  // Add any specific styles for the input container
+}
+
+.label {
+  // Add any specific styles for the label
+}
+
+.input {
+  // Add any specific styles for the input
+}
+
+.checkboxContainer {
+  // Add any specific styles for the checkbox container
+}
+
+.checkbox {
+  // Add any specific styles for the checkbox
+}
+
+.checkboxLabel {
+  // Add any specific styles for the checkbox label
+}
+
+.buttonContainer {
+  // Add any specific styles for the button container
+}
+
+.signInButton {
+  // Add any specific styles for the sign-in button
+}
+
+.signupLink {
+  // Add any specific styles for the signup link container
+}
+
+.signupLinkText {
+  // Add any specific styles for the signup link text
+} */

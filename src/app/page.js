@@ -1,10 +1,12 @@
-import {RolePicking, SignIn} from '../Components/componentIndex'
+import {Navbar, RolePicking, SignIn, SignUp} from '../Components/componentIndex'
 
 export default function Home() {
   return (
     <div>
       {/* <RolePicking/> */}
-      <SignIn/>
+      {/* <SignIn/> */}
+      {/* <SignUp/> */}
+      <Navbar/>
     </div>
   );
 }
