@@ -1,11 +1,12 @@
-import {RolePicking, SignIn,ScreenCaseCitizen} from '../Components/componentIndex'
+import {RolePicking, SignIn,ScreenCaseCitizen,ProfileCard} from '../Components/componentIndex'
 
 export default function Home() {
   return (
     <div>
       {/* <RolePicking/> */}
       {/* <SignIn/> */}
-      <ScreenCaseCitizen/>
+      {/* <ScreenCaseCitizen/> */}
+      <ProfileCard/>
     </div>
   );
 }
