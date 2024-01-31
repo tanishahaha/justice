@@ -1,4 +1,4 @@
-import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, Navbar,JudgeCaseDetailPage} from '../Components/componentIndex'
+import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, Navbar,JudgeCaseDetailPage,MyCalendar} from '../Components/componentIndex'
 
 export default function Home() {
   return (
@@ -9,8 +9,9 @@ export default function Home() {
       {/* <ScreenCaseCitizen/> */}
       {/* <ProfileCard/> */}
       {/* <ConnectWalletModal/>    */}
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <JudgeCaseDetailPage/> */}
+      <MyCalendar/>
     </div>
   );
 }

@@ -45,11 +45,23 @@
   /* border: none; */
   /* Add any other styles as needed */
 }
+
+.custom_calendar2 {
+  background: black !important;
+  border: none !important;
+  outline: none !important;
+  
+  /* border: none; */
+  /* Add any other styles as needed */
+}
+
+
 /* component.module.css */
 .react-calendar {
   border: none !important;
   outline: none !important;
 }
+
 
 /* Override background color when hovering over dates */
 .react-calendar .react-calendar__tile--hover {
