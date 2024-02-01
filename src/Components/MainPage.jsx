@@ -5,7 +5,7 @@ import { FaHome, FaBriefcase, FaCalendarAlt, FaUser, FaSignOutAlt, FaSearch } fr
 import Dashboard from './Dashboard';
 import styles from '../Components/component.module.css';
 import { useSearchParams } from 'next/navigation';
-import { Sidebar,NavbarHeader, ClerkCasesOverview } from './componentIndex';
+import { Sidebar,NavbarHeader, ClerkCasesOverview, ProfileCard } from './componentIndex';
 import JudgeCasesOverview from './JudgeCasesOverview';
 
 
@@ -23,7 +23,8 @@ const MainContent = ({ selectedContent }) => {
       }else if(role=="clerk"){
         return <ClerkCasesOverview/>;
       }
-      
+    case 'profile':
+      return <ProfileCard/>;  
 
     default:
       return null;

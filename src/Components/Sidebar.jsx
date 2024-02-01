@@ -3,6 +3,7 @@ import { justicelogo } from '../../public/imgs/imageIndex';
 import Image from 'next/image';
 import { useState } from 'react';
 import { FaHome, FaBriefcase, FaCalendarAlt, FaUser, FaSignOutAlt} from 'react-icons/fa';
+import Link from 'next/link';
 
 const NavItem = ({ label, icon, link, activeLink, onNavigation }) => {
   const handleClick = () => {
@@ -43,7 +44,13 @@ const Sidebar = ({ onNavigation }) => {
         <p className="text-gray-500 mb-2">ACCOUNT PAGES</p>
         <ul>
           <NavItem label="Profile" icon={<FaUser className="mr-3" />} link="profile" activeLink={activeLink} onNavigation={handleNavigation} />
-          <NavItem label="Sign Out" icon={<FaSignOutAlt className="mr-3" />} link="signOut" activeLink={activeLink} onNavigation={handleNavigation} />
+          <li className="mb-4">
+            <a className={`flex items-center text-gray-700 p-2 rounded-lg ${activeLink === "signOut" ? 'bg-gray-200' : 'hover:bg-gray-200'}`}>
+              {<FaSignOutAlt className="mr-3" />}
+              <Link href="/rolepicking">Sign Out</Link>
+            </a>
+          </li>
+        
         </ul>
       </div>
     </aside>
