@@ -1,10 +1,10 @@
-import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, Navbar} from '../Components/componentIndex'
+import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, NavbarHeader} from '../Components/componentIndex'
 
 export default function Home() {
   return (
     <div>
-      {/* <RolePicking/> */}
-      <SignIn/>
+      <RolePicking/>
+      {/* <SignIn/> */}
       {/* <SignUp/> */}
       {/* <ScreenCaseCitizen/> */}
       {/* <ProfileCard/> */}

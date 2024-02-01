@@ -4,6 +4,10 @@ import SignUp from "./SignUp";
 import ScreenCaseCitizen from "./ScreenCaseCitizen"
 import ProfileCard from "./ProfileCard";
 import ConnectWalletModal from "./ConnectWalletModal";
-import Navbar from "./Navbar";
+import MainPage from "./MainPage";
+import JudgeCasesOverview from "./JudgeCasesOverview";
+import ClerkCasesOverview from "./ClerkCasesOverview";
+import Sidebar from "./Sidebar";
+import NavbarHeader from "./NavbarHeader";
 
-export {RolePicking, SignIn,SignUp, ScreenCaseCitizen , ProfileCard,ConnectWalletModal,Navbar}
+export {RolePicking, SignIn,SignUp, ScreenCaseCitizen , ProfileCard,ConnectWalletModal,MainPage,JudgeCasesOverview,ClerkCasesOverview,Sidebar,NavbarHeader}

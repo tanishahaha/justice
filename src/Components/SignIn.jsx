@@ -1,12 +1,17 @@
 // Login.js
-
+"use client"
 import React from 'react';
 import {FaLock} from 'react-icons/fa';
 import { justicelogo } from '../../public/imgs/imageIndex';
 import Image from 'next/image';
 import styles from './component.module.css';
+import { useRouter, useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 
 const SignIn = () => {
+  const searchparams = useSearchParams();
+  const role = searchparams.get('role');
+
   return (
     <div>
       <div className="flex items-center justify-start pl-24 pt-4">
@@ -44,12 +49,13 @@ const SignIn = () => {
             </div>
           </div>
           <div className={`flex items-center justify-between`}>
-            <button className={` text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full  ${styles.blueButton}`} type="button">
+            <Link href={`/mainpage?role=${role}`} className={` text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full flex align-center justify-center  ${styles.blueButton}`}>SIGN IN</Link>
+            {/* <button className={` text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full  ${styles.blueButton}`} type="button" >
               SIGN IN
-            </button>
+            </button> */}
           </div>
           <div className="text-center text-sm text-white mt-4">
-          Don't have an account? <a href="#" className="text-black hover:text-teal-500">Sign Up</a>
+          Don't have an account? <Link href={`/signup?role=${role}`} className="text-black hover:text-teal-500">Sign Up</Link>
         </div>
         </div>
       </div>
