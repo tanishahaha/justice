@@ -1,4 +1,4 @@
-import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, Navbar,JudgeCaseDetailPage,MyCalendar} from '../Components/componentIndex'
+import {RolePicking, SignIn,SignUp,ScreenCaseCitizen,ProfileCard, ConnectWalletModal, Navbar,JudgeCaseDetailPage,MyCalendar,JudgePreliminaryHearingWorkFlow} from '../Components/componentIndex'
 
 export default function Home() {
   return (
@@ -11,7 +11,9 @@ export default function Home() {
       {/* <ConnectWalletModal/>    */}
       {/* <Navbar/> */}
       {/* <JudgeCaseDetailPage/> */}
-      <MyCalendar/>
+      {/* <MyCalendar/> */}
+      <JudgePreliminaryHearingWorkFlow/>
+
     </div>
   );
 }

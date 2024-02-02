@@ -11,9 +11,7 @@ const InsideJudgeCase = () => {
                     <div className=" md:flex mb-6">
 
                         <div className="md:w-full px-3">
-                            {/* <button className="mb-4 bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-          Back
-        </button> */}
+                            {/* <button className="mb-4 bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">   Back      </button> */}
 
                             <div className="relative">
                                 <label className="block text-sm font-bold mb-2" htmlFor="case_type">

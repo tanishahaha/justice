@@ -8,4 +8,7 @@ import Navbar from "./Navbar";
 import JudgeCaseDetailPage from "./JudgeCaseDetailPage";
 import MyCalendar from "./MyCalendar";
 
-export {RolePicking, SignIn,SignUp, ScreenCaseCitizen , ProfileCard,ConnectWalletModal,Navbar,JudgeCaseDetailPage,MyCalendar}
+import JudgePreliminaryHearingWorkFlow from "./JudgePreliminaryHearingWorkFlow";
+
+
+export {RolePicking, SignIn,SignUp, ScreenCaseCitizen , ProfileCard,ConnectWalletModal,Navbar,JudgeCaseDetailPage,MyCalendar,JudgePreliminaryHearingWorkFlow}
