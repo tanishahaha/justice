@@ -3,8 +3,8 @@ import styles from "./component.module.css"
 
 const InsideJudgeCase = () => {
     return (
-        <div className='bg-gray-200'>
-            <h1 className="text-4xl font-normal mb-2 pt-9 ml-32 text-gray-700">Case No.</h1>
+        <div className='bg-gray-200 mt-20 p-4'>
+            <h1 className="text-4xl font-normal mb-2 px-3 pt-9  text-gray-700">Case No.</h1>
             <div className=" flex flex-col items-center justify-center  ">
 
                 <div className='flex'>
@@ -85,8 +85,9 @@ const InsideJudgeCase = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='align-bottom mt-6'>
-                        <button className={`${styles.blueButton} text-white  font-semibold py-2 px-4  align-baseline min-w-48 max-h-10  rounded-sm`}>Add Case Note</button>
+                    <div className='align-bottom mt-6 flex justify-center gap-1'>
+                        <button className={`${styles.blueButton} text-white  font-semibold py-2 px-4  align-baseline max-h-10  rounded-sm`}>Accept</button>
+                        <button className={`${styles.blueButton} text-white  font-semibold py-2 px-4  align-baseline max-h-10  rounded-sm`}>Reject</button>
                     </div>
                 </div>
 
@@ -128,7 +129,7 @@ const JudgeCaseDetailPage = () => {
         <div className=''>
             <InsideJudgeCase />
             <div className="bg-gray-200  p-4">
-                <div className="grid grid-cols-2  ">
+                <div className="grid grid-cols-2  gap-4 ">
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-2xl ml-32">
                         <h2 className="text-2xl text-gray-700 font-semibold mb-5">Plaintiff Details</h2>
                         <div className="grid grid-cols-2 gap-4 mb-4">

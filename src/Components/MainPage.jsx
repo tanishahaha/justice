@@ -5,31 +5,12 @@ import { FaHome, FaBriefcase, FaCalendarAlt, FaUser, FaSignOutAlt, FaSearch } fr
 import Dashboard from './Dashboard';
 import styles from '../Components/component.module.css';
 import { useSearchParams } from 'next/navigation';
-import { Sidebar,NavbarHeader, ClerkCasesOverview, ProfileCard } from './componentIndex';
+import { Sidebar,NavbarHeader, ClerkCasesOverview, ProfileCard, JudgeCaseDetailPage } from './componentIndex';
 import JudgeCasesOverview from './JudgeCasesOverview';
+import { useRouter } from 'next/navigation';
 
 
 
-const MainContent = ({ selectedContent }) => {
-  const searchparams = useSearchParams();
-  const role = searchparams.get('role');
-
-  switch (selectedContent) {
-    case 'dashboard':
-      return <Dashboard />;
-    case 'caseOverview':
-      if(role=="judge"){
-        return <JudgeCasesOverview/>;
-      }else if(role=="clerk"){
-        return <ClerkCasesOverview/>;
-      }
-    case 'profile':
-      return <ProfileCard/>;  
-
-    default:
-      return null;
-  }
-};
 
 const MainPage = () => {
 
@@ -39,13 +20,43 @@ const MainPage = () => {
     setSelectedContent(content);
   };
 
+  
+  const handleCaseClick = (index) => {
+    // Additional logic if needed
+    setSelectedContent('judgeCaseDetail');
+  };
+
   return (
     <div className="min-h-screen flex">
       <Sidebar onNavigation={handleNavigation} />
       <NavbarHeader />
-      <MainContent selectedContent={selectedContent} />
+      <MainContent selectedContent={selectedContent} handleCaseClick={handleCaseClick}  />
     </div>
   );
 };
 
+const MainContent = ({ selectedContent, handleCaseClick }) => {
+  const router = useRouter();
+  const searchparams = useSearchParams();
+  const role = searchparams.get('role');
+
+  switch (selectedContent) {
+    case 'dashboard':
+      return <Dashboard />;
+    case 'caseOverview':
+      if(role=="judge"){
+        return <JudgeCasesOverview onCaseClick={handleCaseClick}/>;
+      }else if(role=="clerk"){
+        return <ClerkCasesOverview/>;
+      }
+    case 'profile':
+      return <ProfileCard/>; 
+    case 'schedule':
+      router.push('/mycalendar'); 
+    case 'judgeCaseDetail':
+      return <JudgeCaseDetailPage/>;
+    default:
+      return null;
+  }
+};
 export default MainPage;

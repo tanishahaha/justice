@@ -1,15 +1,17 @@
 import React from 'react';
+import { FaEdit } from 'react-icons/fa';
 
 const ProfileCard = () => {
     return (
-        <div className="flex flex-col space-y-9 justify-center items-center h-screen">
-            <h1 className="text-4xl font-semibold mb-2">My Profile</h1>
+        <div className="flex w-full flex-col space-y-9 justify-center items-center h-screen ">
+            <h1 className="text-4xl text-center font-semibold mb-2">My Profile</h1>
 
-            <div className="bg-gray-200 p-8 rounded-2xl shadow-lg w-100 relative">
-                {/* <div className="absolute top-0 left-0 rounded-full bg-gray-200 w-24 h-24 -translate-x-12 translate-y-6"></div> */}
-                <div className="absolute top-4 right-4 text-gray-600 cursor-pointer">
-                    <i className="fas fa-pen"></i>
-                </div>
+            
+      <div className="bg-gray-200 h-96  p-14 rounded-2xl shadow-lg w-100 relative">
+        <div className="absolute top-4 right-4 text-gray-600 cursor-pointer flex items-center">
+          <FaEdit className="mr-2" />
+          <span>Edit</span>
+        </div>
                 <div className='flex space-x-3'>
                     <div className="mb-4">
                         <label className="block text-black text-sm font-bold mb-2" htmlFor="judgeName">

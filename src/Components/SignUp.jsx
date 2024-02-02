@@ -15,7 +15,7 @@ const SignUp = () => {
     <div>
       <div className="flex items-center justify-start pl-24 pt-4">
                 {/* Move the logo to the left */}
-                <Image src={justicelogo} alt="JusticeChain logo with scales of justice" width={140} height={140}></Image>
+                <Image src={justicelogo} alt="JusticeChain logo with scales of justice" width={120} height={120}></Image>
             </div>
 {/* <div className={`p-4 ${styles.flexContainer}`}></div> */}
 <div className={`w-full max-w-md m-auto ${styles.loginContainer}`}>

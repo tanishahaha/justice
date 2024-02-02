@@ -20,7 +20,7 @@ const RolePicking = () => {
                 <Link href="/signin?role=judge" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Judge</Link>
                 <Link href="/signin?role=clerk" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Office Clerk</Link>
                 <Link href="/signin?role=lawyer" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Lawyer</Link>
-                <Link href="/signin?role=citizen" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Citizen</Link>
+                <Link href="/citizen" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Citizen</Link>
                
             </div>
             {/* <img src="https://placehold.co/200x200" alt="Scales of justice on a blue stand" className="mx-auto" /> */}
