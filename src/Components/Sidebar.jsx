@@ -12,7 +12,7 @@ const NavItem = ({ label, icon, link, activeLink, onNavigation }) => {
 
   return (
     <li className="mb-4">
-      <a onClick={handleClick} className={`flex items-center text-gray-700 p-2 rounded-lg ${activeLink === link ? 'bg-gray-200' : 'hover:bg-gray-200'}`}>
+      <a onClick={()=>handleClick} className={`flex items-center text-gray-700 p-2 rounded-lg ${activeLink === link ? 'bg-gray-200' : 'hover:bg-gray-200'}`}>
         {icon}
         {label}
       </a>

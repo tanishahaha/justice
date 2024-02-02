@@ -25,7 +25,7 @@ const NavbarHeader = () => {
   return (
     <header className="fixed w-[85%] top-0 right-0 z-10 flex justify-end gap-4 items-center p-6 bg-white">
       <button
-        onClick={handleConnectWalletClick}
+        onClick={()=>handleConnectWalletClick}
         className={`text-sm bg-blue-600 text-white py-2 px-4 rounded-full font-semibold hover:bg-blue-700 transition duration-300 ${styles.walletBbtn}`}
       >
         Connect Wallet

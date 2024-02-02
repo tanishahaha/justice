@@ -12,7 +12,7 @@ const ConnectWalletModal = ({ onClose }) => {
           {/* <button className="text-gray-600 hover:text-gray-800">
             <IoMdClose size={20} />
           </button> */}
-          <button onClick={onClose}><IoMdClose size={20} /></button>
+          <button onClick={()=>onClose}><IoMdClose size={20} /></button>
         </div>
         <div className='mb-24 space-y-4'>
           <h1 className="text-2xl font-semibold text-center mb-14">CONNECT WALLET</h1>
