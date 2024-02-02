@@ -4,6 +4,7 @@ import React from 'react';
 import { justicelogo } from '../../public/imgs/imageIndex';
 import Image from 'next/image';
 import styles from './component.module.css';
+import Link from 'next/link';
 
 const RolePicking = () => {
     return (
@@ -16,10 +17,11 @@ const RolePicking = () => {
             <p className="text-xl mb-10">Justice, Redefined: Blockchain Empowered</p>
             <h2 className="text-2xl font-semibold mb-4">Choose your Role</h2>
             <div className="flex justify-center gap-4 mb-20">
-                <button className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Judge</button>
-                <button className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Office Clerk</button>
-                <button className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Lawyer</button>
-                <button className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Citizen</button>
+                <Link href="/signin?role=judge" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Judge</Link>
+                <Link href="/signin?role=clerk" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Office Clerk</Link>
+                <Link href="/signin?role=lawyer" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Lawyer</Link>
+                <Link href="/signin?role=citizen" className={`${styles.blueButton} text-white font-semibold py-2 px-4 rounded`}>Citizen</Link>
+               
             </div>
             {/* <img src="https://placehold.co/200x200" alt="Scales of justice on a blue stand" className="mx-auto" /> */}
         </div>
