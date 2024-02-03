@@ -49,6 +49,7 @@ const MainContent = ({ selectedContent, handleCaseClick }) => {
       }else if(role=="clerk"){
         return <ClerkCasesOverview/>;
       }
+      break;
     case 'profile':
       return <ProfileCard/>; 
     case 'schedule':
