@@ -1,6 +1,6 @@
 // SignUp.jsx
 "use client"
-import React from 'react';
+import React, { Suspense } from 'react';
 import { FaFacebookF, FaApple, FaGoogle } from 'react-icons/fa';
 import { justicelogo } from '../../public/imgs/imageIndex';
 import Image from 'next/image';
@@ -8,7 +8,7 @@ import styles from './component.module.css';
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
-const SignUp = () => {
+function Register(){
   const searchparams = useSearchParams();
   const role = searchparams.get('role');
   return (
@@ -83,6 +83,11 @@ const SignUp = () => {
     </div>
     </div>
   );
-};
-
-export default SignUp;
+}
+export default function SignUp() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Register />
+    </Suspense>
+  );
+}

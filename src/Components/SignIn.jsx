@@ -1,6 +1,6 @@
-// Login.js
+
 "use client"
-import React from 'react';
+import React, { Suspense } from 'react';
 import {FaLock} from 'react-icons/fa';
 import { justicelogo } from '../../public/imgs/imageIndex';
 import Image from 'next/image';
@@ -8,7 +8,7 @@ import styles from './component.module.css';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
-const SignIn = () => {
+function Login() {
   const searchparams = useSearchParams();
   const role = searchparams.get('role');
 
@@ -63,6 +63,15 @@ const SignIn = () => {
     </div>
     
   );
-};
+  // ... rest of your component code
+}
 
-export default SignIn;
+export default function SignIn() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Login />
+    </Suspense>
+  );
+}
+
+
