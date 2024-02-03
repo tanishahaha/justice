@@ -1,4 +1,5 @@
 // components/DocumentManagement.jsx
+"use client"
 import React from 'react';
 import { FaPlus, FaCalendarAlt, FaFileUpload, FaFileWord, FaFileAudio } from 'react-icons/fa';
 

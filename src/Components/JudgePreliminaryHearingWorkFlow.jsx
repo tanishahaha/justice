@@ -1,3 +1,4 @@
+"use client"
 import CaseDetailNavbar from "./CaseDetailNavbar";
 import JudgeCasePreliminaryLine from './JudgesPrelimLine';
 import DocumentManagement from './DocumentManagement'

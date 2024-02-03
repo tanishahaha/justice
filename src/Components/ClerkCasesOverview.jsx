@@ -1,5 +1,5 @@
 // pages/ClerkCasesOverview.jsx
-
+"use client"
 import React from 'react';
 
 const ClerkCasesOverview = () => {

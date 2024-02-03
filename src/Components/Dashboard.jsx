@@ -1,4 +1,5 @@
 // pages/index.js
+"use client"
 import { FaFileAlt, FaCalendar } from 'react-icons/fa';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
