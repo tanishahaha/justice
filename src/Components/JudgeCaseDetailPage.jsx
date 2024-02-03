@@ -3,9 +3,9 @@ import styles from "./component.module.css"
 
 const InsideJudgeCase = () => {
     return (
-        <div className='bg-gray-200 mt-20 p-4'>
+        <div className='bg-gray-200 mt-20 p-4 w-full'>
             <h1 className="text-4xl font-normal mb-2 px-3 pt-9  text-gray-700">Case No.</h1>
-            <div className=" flex flex-col items-center justify-center  ">
+            <div className=" flex flex-col items-center justify-center  w-full">
 
                 <div className='flex'>
                     <div className=" md:flex mb-6">

@@ -3,7 +3,7 @@ import { FaEdit } from 'react-icons/fa';
 
 const ProfileCard = () => {
     return (
-        <div className="flex w-full flex-col space-y-9 justify-center items-center h-screen ">
+        <div className="flex w-full mt-16 flex-col space-y-9 justify-center items-center h-screen ">
             <h1 className="text-4xl text-center font-semibold mb-2">My Profile</h1>
 
             

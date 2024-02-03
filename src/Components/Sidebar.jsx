@@ -12,7 +12,7 @@ const NavItem = ({ label, icon, link, activeLink, onNavigation }) => {
 
   return (
     <li className="mb-4">
-      <a onClick={handleClick} className={`flex items-center text-gray-700 p-2 rounded-lg ${activeLink === link ? 'bg-gray-200' : 'hover:bg-gray-200'}`}>
+      <a onClick={()=>handleClick()} className={`cursor-pointer flex items-center text-gray-700 p-2 rounded-lg ${activeLink === link ? 'bg-gray-200' : 'hover:bg-gray-200'}`}>
         {icon}
         {label}
       </a>
@@ -29,7 +29,7 @@ const Sidebar = ({ onNavigation }) => {
   };
 
   return (
-    <aside className="w-[20%] bg-white p-6">
+    <aside className="w-[22%] z-20 bg-white p-6 ">
       <div className="mb-8">
         <Image src={justicelogo} alt="JusticeChain logo with scales of justice" width={140} height={140}></Image>
       </div>

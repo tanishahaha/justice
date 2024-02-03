@@ -6,13 +6,13 @@ import { IoMdClose } from 'react-icons/io';
 
 const ConnectWalletModal = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 bg-gray-800">
+    <div className="z-50 w-full fixed inset-0 flex items-center justify-center bg-opacity-50 bg-gray-800">
       <div className="bg-white rounded-lg p-6 shadow-lg max-w-lg flex flex-col items-center">
         <div className="flex justify-end w-full">
           {/* <button className="text-gray-600 hover:text-gray-800">
             <IoMdClose size={20} />
           </button> */}
-          <button onClick={()=>onClose}><IoMdClose size={20} /></button>
+          <button onClick={()=>onClose()}><IoMdClose size={20} /></button>
         </div>
         <div className='mb-24 space-y-4'>
           <h1 className="text-2xl font-semibold text-center mb-14">CONNECT WALLET</h1>
